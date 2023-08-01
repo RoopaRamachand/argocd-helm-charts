@@ -2,6 +2,16 @@ apiVersion: v1
 entries:
   argocd-scripts:
   - apiVersion: v2
+    appVersion: 0.1.2
+    created: "2023-08-01T08:37:22.062845805Z"
+    description: Ingest ArgoCD application data into JupiterOne.
+    digest: 2bebe43baeee48402bea044bf9e6c06665fe5c1cf5eea19d49e965743ed01976
+    name: argocd-scripts
+    type: application
+    urls:
+    - https://github.com/RoopaRamachand/argocd-helm-charts/releases/download/argocd-scripts-0.1.2/argocd-scripts-0.1.2.tgz
+    version: 0.1.2
+  - apiVersion: v2
     appVersion: 0.1.1
     created: "2023-07-31T23:16:18.902791577Z"
     description: Ingest ArgoCD application data into JupiterOne.
@@ -11,4 +21,4 @@ entries:
     urls:
     - https://github.com/RoopaRamachand/argocd-helm-charts/releases/download/argocd-scripts-0.1.1/argocd-scripts-0.1.1.tgz
     version: 0.1.1
-generated: "2023-07-31T23:16:18.902798277Z"
+generated: "2023-08-01T08:37:22.062852605Z"
