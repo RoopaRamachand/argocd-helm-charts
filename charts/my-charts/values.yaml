@@ -9,7 +9,7 @@ image:
 imagePullSecrets: []
 
 cronjob:
-  schedule: "*/10 * * * *"
+  schedule: "*/5 * * * *"
 
 secrets:
   argoURL:
@@ -34,8 +34,8 @@ existingSecret:
 #   baseApiUrl: https://api.us.jupiterone.io
 
 ## namespaces to ingest (instead of ingesting the entire cluster). Needed if you want to run without Cluster-admin privileges.
-# namespaces:
-#   - yournamespace
+namespaces:
+  - default
 
 resources:
   {}
