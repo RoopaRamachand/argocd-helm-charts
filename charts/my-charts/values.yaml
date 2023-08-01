@@ -34,8 +34,8 @@ existingSecret:
 #   baseApiUrl: https://api.us.jupiterone.io
 
 ## namespaces to ingest (instead of ingesting the entire cluster). Needed if you want to run without Cluster-admin privileges.
-namespaces:
-  - default
+# namespaces:
+#   - default
 
 resources:
   {}

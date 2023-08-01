@@ -23,14 +23,8 @@ jobs:
       - name: Install Helm
         uses: azure/setup-helm@v3
 
-      # - name: Run chart-releaser
-      #   uses: helm/chart-releaser-action@v1.5.0
-      #   env:
-      #     CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
-
       - name: Run chart-releaser
-        uses: stecky/yet-another-chart-releaser-action@v1
-        with:
-          packages_with_index: true
+        uses: helm/chart-releaser-action@v1.5.0
         env:
-          YACR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+          CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+
