@@ -30,13 +30,7 @@ spec:
             - name: {{ .Chart.Name }}
               image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
               imagePullPolicy: {{ .Values.image.pullPolicy }}
-              # command: ['/kubexit/kubexit', 'yarn']
-              args:
-              - "$(ARGO_URL)"
-              - "$(ARGO_USER)"
-              - "$(ARGO_PASSWORD)" 
-              - "$(JUPITERONE_ACCOUNT_ID)"
-              - "$(JUPITERONE_API_KEY)" 
+              # command: ['/kubexit/kubexit', 'yarn'] 
               env:
                 - name: ACCESS_TYPE
                   value: {{ ternary "cluster" "namespace" .Values.rbac.useClusterRole }}
@@ -69,3 +63,9 @@ spec:
                       key: {{ .Values.existingSecret.jupiteroneApiKeySecretKey | default "jupiteroneApiKey" }}
                 - name: LOAD_KUBERNETES_CONFIG_FROM_DEFAULT
                   value: 'false'
+              args:
+              - "$(ARGO_URL)"
+              - "$(ARGO_USER)"
+              - "$(ARGO_PASSWORD)" 
+              - "$(JUPITERONE_ACCOUNT_ID)"
+              - "$(JUPITERONE_API_KEY)"

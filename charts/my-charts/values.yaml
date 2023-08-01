@@ -30,6 +30,8 @@ existingSecret:
   jupiteroneApiKeySecretKey: jupiteroneApiKey
   #jupiteroneIntegrationInstanceIdSecretKey: jupiteroneIntegrationInstanceId
 
+#arguments: ['--argo_URL', 'argocdserverurl', '--argo_user', 'adminuser', '--argo_password', 'password', '--j1_account_id', 'j1accountid', '--j1_api_key', 'j1token']
+
 # settings:
 #   baseApiUrl: https://api.us.jupiterone.io
 
